@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name Türschild-cache)(type Legacy)(uri C:/Users/mmardini/Documents/Türschilder/Türschild/Türschild-cache.lib)(options "")(descr ""))
   (lib (name Tuerschld)(type Legacy)(uri C:/GIT/Mini-Projects/Tuerschild-Kiacad/Tuerschld.lib)(options "")(descr ""))
+  (lib (name Türschild-test1_cleanup-rescue)(type Legacy)(uri ${KIPRJMOD}/Türschild-test1_cleanup-rescue.lib)(options "")(descr ""))
 )

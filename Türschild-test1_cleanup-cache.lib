@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Battery_Management:BQ25570
+# Battery_Management_BQ25570
 #
-DEF Battery_Management:BQ25570 U 0 20 Y Y 1 F N
+DEF Battery_Management_BQ25570 U 0 20 Y Y 1 F N
 F0 "U" -500 650 50 H V C CNN
-F1 "Battery_Management:BQ25570" 400 650 50 H V C CNN
+F1 "Battery_Management_BQ25570" 400 650 50 H V C CNN
 F2 "Package_DFN_QFN:QFN-20-1EP_3.5x3.5mm_P0.5mm_EP2x2mm" 0 -200 50 H I C CNN
 F3 "" 400 1200 50 H I C CNN
 $FPLIST
@@ -37,11 +37,11 @@ X VSS 9 0 -700 100 U 50 50 1 1 P N
 ENDDRAW
 ENDDEF
 #
-# Battery_Management:BQ27441-G1
+# Battery_Management_BQ27441-G1
 #
-DEF Battery_Management:BQ27441-G1 U 0 40 Y Y 1 F N
+DEF Battery_Management_BQ27441-G1 U 0 40 Y Y 1 F N
 F0 "U" -200 625 50 H V R CNN
-F1 "Battery_Management:BQ27441-G1" -200 550 50 H V R CNN
+F1 "Battery_Management_BQ27441-G1" -200 550 50 H V R CNN
 F2 "Package_SON:Texas_S-PDSO-N12" 250 -550 50 H I L CNN
 F3 "" 200 200 50 H I C CNN
 ALIAS BQ27441DRZR-G1A BQ27441DRZT-G1A BQ27441DRZR-G1B BQ27441DRZT-G1B
@@ -66,11 +66,11 @@ X NC 9 400 -200 100 L 50 50 1 1 N N
 ENDDRAW
 ENDDEF
 #
-# Connector:Conn_01x03_Female
+# Connector_Conn_01x03_Female
 #
-DEF Connector:Conn_01x03_Female J 0 40 Y N 1 F N
+DEF Connector_Conn_01x03_Female J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "Connector:Conn_01x03_Female" 0 -200 50 H V C CNN
+F1 "Connector_Conn_01x03_Female" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -89,11 +89,11 @@ X Pin_3 3 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector:Conn_01x03_Male
+# Connector_Conn_01x03_Male
 #
-DEF Connector:Conn_01x03_Male J 0 40 Y N 1 F N
+DEF Connector_Conn_01x03_Male J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "Connector:Conn_01x03_Male" 0 -200 50 H V C CNN
+F1 "Connector_Conn_01x03_Male" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -112,65 +112,11 @@ X Pin_3 3 200 -100 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector:TestPoint_Probe
+# Connector_Generic_MountingPin_Conn_01x24_MountingPin
 #
-DEF Connector:TestPoint_Probe TP 0 30 N N 1 F N
-F0 "TP" 65 230 50 H V C CNN
-F1 "Connector:TestPoint_Probe" 65 160 50 H V C CNN
-F2 "" 200 0 50 H I C CNN
-F3 "" 200 0 50 H I C CNN
-$FPLIST
- Pin*
- Test*
-$ENDFPLIST
-DRAW
-P 4 0 1 0 50 30 0 0 30 50 50 30 F
-P 5 0 1 0 55 25 25 55 95 125 125 95 55 25 f
-X 1 1 0 0 0 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Connector:USB_B_Micro
-#
-DEF Connector:USB_B_Micro J 0 40 Y Y 1 F N
-F0 "J" -200 450 50 H V L CNN
-F1 "Connector:USB_B_Micro" -200 350 50 H V L CNN
-F2 "" 150 -50 50 H I C CNN
-F3 "" 150 -50 50 H I C CNN
-ALIAS USB_B_Mini
-$FPLIST
- USB*
-$ENDFPLIST
-DRAW
-C -150 85 25 0 1 10 F
-C -25 135 15 0 1 10 F
-S -200 -300 200 300 0 1 10 f
-S -5 -300 5 -270 0 1 0 N
-S 10 50 -20 20 0 1 10 F
-S 200 -205 170 -195 0 1 0 N
-S 200 -105 170 -95 0 1 0 N
-S 200 -5 170 5 0 1 0 N
-S 200 195 170 205 0 1 0 N
-P 2 0 1 10 -75 85 25 85 N
-P 4 0 1 10 -125 85 -100 85 -50 135 -25 135 N
-P 4 0 1 10 -100 85 -75 85 -50 35 0 35 N
-P 4 0 1 10 25 110 25 60 75 85 25 110 F
-P 5 0 1 0 -170 220 -70 220 -80 190 -160 190 -170 220 F
-P 9 0 1 0 -185 230 -185 220 -175 190 -175 180 -65 180 -65 190 -55 220 -55 230 -185 230 N
-X VBUS 1 300 200 100 L 50 50 1 1 w
-X D- 2 300 -100 100 L 50 50 1 1 P
-X D+ 3 300 0 100 L 50 50 1 1 P
-X ID 4 300 -200 100 L 50 50 1 1 P
-X GND 5 0 -400 100 U 50 50 1 1 w
-X Shield 6 -100 -400 100 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Connector_Generic_MountingPin:Conn_01x24_MountingPin
-#
-DEF Connector_Generic_MountingPin:Conn_01x24_MountingPin J 0 40 Y N 1 F N
+DEF Connector_Generic_MountingPin_Conn_01x24_MountingPin J 0 40 Y N 1 F N
 F0 "J" 0 1200 50 H V C CNN
-F1 "Connector_Generic_MountingPin:Conn_01x24_MountingPin" 50 -1300 50 H V L CNN
+F1 "Connector_Generic_MountingPin_Conn_01x24_MountingPin" 50 -1300 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -232,11 +178,65 @@ X MountPin MP 0 -1400 120 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:Battery
+# Connector_TestPoint_Probe
 #
-DEF Device:Battery BT 0 0 N N 1 F N
+DEF Connector_TestPoint_Probe TP 0 30 N N 1 F N
+F0 "TP" 65 230 50 H V C CNN
+F1 "Connector_TestPoint_Probe" 65 160 50 H V C CNN
+F2 "" 200 0 50 H I C CNN
+F3 "" 200 0 50 H I C CNN
+$FPLIST
+ Pin*
+ Test*
+$ENDFPLIST
+DRAW
+P 4 0 1 0 50 30 0 0 30 50 50 30 F
+P 5 0 1 0 55 25 25 55 95 125 125 95 55 25 f
+X 1 1 0 0 0 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_USB_B_Micro
+#
+DEF Connector_USB_B_Micro J 0 40 Y Y 1 F N
+F0 "J" -200 450 50 H V L CNN
+F1 "Connector_USB_B_Micro" -200 350 50 H V L CNN
+F2 "" 150 -50 50 H I C CNN
+F3 "" 150 -50 50 H I C CNN
+ALIAS USB_B_Mini
+$FPLIST
+ USB*
+$ENDFPLIST
+DRAW
+C -150 85 25 0 1 10 F
+C -25 135 15 0 1 10 F
+S -200 -300 200 300 0 1 10 f
+S -5 -300 5 -270 0 1 0 N
+S 10 50 -20 20 0 1 10 F
+S 200 -205 170 -195 0 1 0 N
+S 200 -105 170 -95 0 1 0 N
+S 200 -5 170 5 0 1 0 N
+S 200 195 170 205 0 1 0 N
+P 2 0 1 10 -75 85 25 85 N
+P 4 0 1 10 -125 85 -100 85 -50 135 -25 135 N
+P 4 0 1 10 -100 85 -75 85 -50 35 0 35 N
+P 4 0 1 10 25 110 25 60 75 85 25 110 F
+P 5 0 1 0 -170 220 -70 220 -80 190 -160 190 -170 220 F
+P 9 0 1 0 -185 230 -185 220 -175 190 -175 180 -65 180 -65 190 -55 220 -55 230 -185 230 N
+X VBUS 1 300 200 100 L 50 50 1 1 w
+X D- 2 300 -100 100 L 50 50 1 1 P
+X D+ 3 300 0 100 L 50 50 1 1 P
+X ID 4 300 -200 100 L 50 50 1 1 P
+X GND 5 0 -400 100 U 50 50 1 1 w
+X Shield 6 -100 -400 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Battery
+#
+DEF Device_Battery BT 0 0 N N 1 F N
 F0 "BT" 100 100 50 H V L CNN
-F1 "Device:Battery" 100 0 50 H V L CNN
+F1 "Device_Battery" 100 0 50 H V L CNN
 F2 "" 0 60 50 V I C CNN
 F3 "" 0 60 50 V I C CNN
 DRAW
@@ -257,11 +257,11 @@ X - 2 0 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:C
+# Device_C
 #
-DEF Device:C C 0 10 N Y 1 F N
+DEF Device_C C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "Device:C" 25 -100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -275,11 +275,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:D_Schottky_Small
+# Device_D_Schottky_Small
 #
-DEF Device:D_Schottky_Small D 0 10 N N 1 F N
+DEF Device_D_Schottky_Small D 0 10 N N 1 F N
 F0 "D" -50 80 50 H V L CNN
-F1 "Device:D_Schottky_Small" -280 -80 50 H V L CNN
+F1 "Device_D_Schottky_Small" -280 -80 50 H V L CNN
 F2 "" 0 0 50 V I C CNN
 F3 "" 0 0 50 V I C CNN
 $FPLIST
@@ -299,11 +299,11 @@ X A 2 100 0 70 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:L
+# Device_L
 #
-DEF Device:L L 0 40 N N 1 F N
+DEF Device_L L 0 40 N N 1 F N
 F0 "L" -50 0 50 V V C CNN
-F1 "Device:L" 75 0 50 V V C CNN
+F1 "Device_L" 75 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -322,11 +322,11 @@ X 2 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:LED
+# Device_LED
 #
-DEF Device:LED D 0 40 N N 1 F N
+DEF Device_LED D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Device:LED" 0 -100 50 H V C CNN
+F1 "Device_LED" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -345,11 +345,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:R
+# Device_R
 #
-DEF Device:R R 0 0 N Y 1 F N
+DEF Device_R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "Device:R" 0 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -362,11 +362,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:R_Small
+# Device_R_Small
 #
-DEF Device:R_Small R 0 10 N N 1 F N
+DEF Device_R_Small R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "Device:R_Small" 30 -40 50 H V L CNN
+F1 "Device_R_Small" 30 -40 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -379,11 +379,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:Solar_Cells
+# Device_Solar_Cells
 #
-DEF Device:Solar_Cells SC 0 0 N N 1 F N
+DEF Device_Solar_Cells SC 0 0 N N 1 F N
 F0 "SC" 100 100 50 H V L CNN
-F1 "Device:Solar_Cells" 100 0 50 H V L CNN
+F1 "Device_Solar_Cells" 100 0 50 H V L CNN
 F2 "" 0 60 50 V I C CNN
 F3 "" 0 60 50 V I C CNN
 DRAW
@@ -408,11 +408,11 @@ X - 2 0 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Diode:MBR0530
+# Diode_MBR0530
 #
-DEF Diode:MBR0530 D 0 40 N N 1 F N
+DEF Diode_MBR0530 D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Diode:MBR0530" 0 -100 50 H V C CNN
+F1 "Diode_MBR0530" 0 -100 50 H V C CNN
 F2 "Diode_SMD:D_SOD-123" 0 -175 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 ALIAS MBR0520LT MBR0520 MBR0530 MBR0540 MBR0550 MBR0560 MBR0570 MBR0580 BAT42W-V BAT43W-V PMEG6010CEH
@@ -428,11 +428,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Interface_USB:CP2102N-A01-GQFN28
+# Interface_USB_CP2102N-A01-GQFN28
 #
-DEF Interface_USB:CP2102N-A01-GQFN28 U 0 20 Y Y 1 F N
+DEF Interface_USB_CP2102N-A01-GQFN28 U 0 20 Y Y 1 F N
 F0 "U" -300 1250 50 H V R CNN
-F1 "Interface_USB:CP2102N-A01-GQFN28" 1050 1250 50 H V R CNN
+F1 "Interface_USB_CP2102N-A01-GQFN28" 1050 1250 50 H V R CNN
 F2 "Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm" 450 -1200 50 H I L CNN
 F3 "" 50 -750 50 H I C CNN
 $FPLIST
@@ -472,17 +472,15 @@ X ~RSTb 9 -500 900 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# Jumper:Jumper_3_Bridged12
+# Jumper_Jumper_3_Bridged12
 #
-DEF Jumper:Jumper_3_Bridged12 JP 0 0 Y N 1 F N
+DEF Jumper_Jumper_3_Bridged12 JP 0 0 Y N 1 F N
 F0 "JP" -100 -100 50 H V C CNN
-F1 "Jumper:Jumper_3_Bridged12" 0 110 50 H V C CNN
+F1 "Jumper_Jumper_3_Bridged12" 0 110 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- Jumper*
- TestPoint*3Pads*
- TestPoint*Bridge*
+ SolderJumper*Bridged12*
 $ENDFPLIST
 DRAW
 A -65 -50 89 1282 518 0 1 0 N -120 20 -10 20
@@ -496,32 +494,35 @@ X B 3 250 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Power_Protection:WE-TVS-82400152
+# Regulator_Linear_LM1117-3.3
 #
-DEF Power_Protection:WE-TVS-82400152 U 0 40 Y Y 1 F N
-F0 "U" 0 350 50 H V C CNN
-F1 "Power_Protection:WE-TVS-82400152" 0 250 50 H V C CNN
-F2 "" 0 250 50 H I C CNN
-F3 "" 0 250 50 H I C CNN
+DEF Regulator_Linear_LM1117-3.3 U 0 10 Y Y 1 F N
+F0 "U" -150 125 50 H V C CNN
+F1 "Regulator_Linear_LM1117-3.3" 0 125 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS LM1117-2.5 LM1117-3.3 LM1117-5.0 TLV1117-15 TLV1117-18 TLV1117-25 TLV1117-33 TLV1117-50
+$FPLIST
+ SOT?223*
+ TO?263*
+ TO?252*
+ TO?220*
+$ENDFPLIST
 DRAW
-S -250 200 250 -200 0 1 0 N
-X IO1 1 -350 100 100 R 50 50 1 1 B
-X GND 2 -350 0 100 R 50 50 1 1 W
-X IO2 3 -350 -100 100 R 50 50 1 1 B
-X IO2 4 350 -100 100 L 50 50 1 1 B
-X VDD 5 350 0 100 L 50 50 1 1 W
-X IO1 6 350 100 100 L 50 50 1 1 B
+S -200 -200 200 75 0 1 10 f
+X GND 1 0 -300 100 U 50 50 1 1 W
+X VO 2 300 0 100 L 50 50 1 1 w
+X VI 3 -300 0 100 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# RF_Module:ESP32-WROOM-32
+# Türschild-test1_cleanup-rescue_ESP32-WROOM-32-RF_Module
 #
-DEF RF_Module:ESP32-WROOM-32 U 0 20 Y Y 1 F N
+DEF Türschild-test1_cleanup-rescue_ESP32-WROOM-32-RF_Module U 0 20 Y Y 1 F N
 F0 "U" -500 1350 50 H V L CNN
-F1 "RF_Module:ESP32-WROOM-32" 50 1350 50 H V L CNN
+F1 "Türschild-test1_cleanup-rescue_ESP32-WROOM-32-RF_Module" 50 1350 50 H V L CNN
 F2 "RF_Module:ESP32-WROOM-32" 0 -1500 50 H I C CNN
 F3 "" -300 50 50 H I C CNN
-ALIAS ESP32-WROOM-32D
 $FPLIST
  ESP32?WROOM?32*
 $ENDFPLIST
@@ -569,33 +570,11 @@ X IO33 9 600 -900 100 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# Regulator_Linear:LM1117-3.3
+# Türschild-test1_cleanup-rescue_IRLML2502PbF-Tuerschld
 #
-DEF Regulator_Linear:LM1117-3.3 U 0 10 Y Y 1 F N
-F0 "U" -150 125 50 H V C CNN
-F1 "Regulator_Linear:LM1117-3.3" 0 125 50 H V L CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-ALIAS LM1117-2.5 LM1117-3.3 LM1117-5.0 TLV1117-15 TLV1117-18 TLV1117-25 TLV1117-33 TLV1117-50
-$FPLIST
- SOT?223*
- TO?263*
- TO?252*
- TO?220*
-$ENDFPLIST
-DRAW
-S -200 -200 200 75 0 1 10 f
-X GND 1 0 -300 100 U 50 50 1 1 W
-X VO 2 300 0 100 L 50 50 1 1 w
-X VI 3 -300 0 100 R 50 50 1 1 W
-ENDDRAW
-ENDDEF
-#
-# Tuerschld:IRLML2502PbF
-#
-DEF Tuerschld:IRLML2502PbF Q 0 20 Y N 1 F N
+DEF Türschild-test1_cleanup-rescue_IRLML2502PbF-Tuerschld Q 0 20 Y N 1 F N
 F0 "Q" 200 75 50 H V L CNN
-F1 "Tuerschld:IRLML2502PbF" 200 0 50 H V L CNN
+F1 "Türschild-test1_cleanup-rescue_IRLML2502PbF-Tuerschld" 200 0 50 H V L CNN
 F2 "Package_TO_SOT_THT:TO-92_Inline" 200 -75 50 H I L CIN
 F3 "" 0 0 50 H I L CNN
 $FPLIST
@@ -622,26 +601,29 @@ X D 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# power:+3.3V
+# Türschild-test1_cleanup-rescue_WE-TVS-82400152-Power_Protection
 #
-DEF power:+3.3V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+3.3V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+DEF Türschild-test1_cleanup-rescue_WE-TVS-82400152-Power_Protection U 0 40 Y Y 1 F N
+F0 "U" 0 350 50 H V C CNN
+F1 "Türschild-test1_cleanup-rescue_WE-TVS-82400152-Power_Protection" 0 250 50 H V C CNN
+F2 "" 0 250 50 H I C CNN
+F3 "" 0 250 50 H I C CNN
 DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +3V3 1 0 0 0 U 50 50 1 1 W N
+S -250 200 250 -200 0 1 0 N
+X IO1 1 -350 100 100 R 50 50 1 1 B
+X GND 2 -350 0 100 R 50 50 1 1 W
+X IO2 3 -350 -100 100 R 50 50 1 1 B
+X IO2 4 350 -100 100 L 50 50 1 1 B
+X VDD 5 350 0 100 L 50 50 1 1 W
+X IO1 6 350 100 100 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# power:+3V3
+# power_+3.3V
 #
-DEF power:+3V3 #PWR 0 0 Y Y 1 F P
+DEF power_+3.3V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+3V3" 0 140 50 H V C CNN
+F1 "power_+3.3V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 ALIAS +3.3V
@@ -653,11 +635,26 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:GND
+# power_+3V3
 #
-DEF power:GND #PWR 0 0 Y Y 1 F P
+DEF power_+3V3 #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+3V3" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power:GND" 0 -150 50 H V C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -666,11 +663,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:PWR_FLAG
+# power_PWR_FLAG
 #
-DEF power:PWR_FLAG #FLG 0 0 N N 1 F P
+DEF power_PWR_FLAG #FLG 0 0 N N 1 F P
 F0 "#FLG" 0 75 50 H I C CNN
-F1 "power:PWR_FLAG" 0 150 50 H V C CNN
+F1 "power_PWR_FLAG" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -679,11 +676,11 @@ X pwr 1 0 0 0 U 50 50 0 0 w
 ENDDRAW
 ENDDEF
 #
-# power:VBUS
+# power_VBUS
 #
-DEF power:VBUS #PWR 0 0 Y Y 1 F P
+DEF power_VBUS #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:VBUS" 0 150 50 H V C CNN
+F1 "power_VBUS" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -694,17 +691,16 @@ X VBUS 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:VCC
+# power_VCC
 #
-DEF power:VCC #PWR 0 0 Y Y 1 F P
+DEF power_VCC #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:VCC" 0 150 50 H V C CNN
+F1 "power_VCC" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
+C 0 75 25 0 1 0 N
+P 2 0 1 0 0 0 0 50 N
 X VCC 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF

@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Türschild-test1_cleanup-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -586,7 +586,7 @@ Wire Wire Line
 Wire Wire Line
 	3800 10050 4000 10050
 $Comp
-L RF_Module:ESP32-WROOM-32 U3
+L Türschild-test1_cleanup-rescue:ESP32-WROOM-32-RF_Module U3
 U 1 1 5E6AA9AA
 P 3200 9250
 F 0 "U3" H 3700 7650 50  0000 C CNN
@@ -1317,17 +1317,6 @@ Wire Wire Line
 	7975 4600 7975 4350
 Wire Wire Line
 	7925 4600 7975 4600
-$Comp
-L power:GND #PWR0106
-U 1 1 5E3D7284
-P 7850 4350
-F 0 "#PWR0106" H 7850 4100 50  0001 C CNN
-F 1 "GND" H 7950 4400 50  0000 R CNN
-F 2 "" H 7850 4350 50  0001 C CNN
-F 3 "" H 7850 4350 50  0001 C CNN
-	1    7850 4350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7975 4750 7975 4600
 Connection ~ 7975 4600
@@ -2222,7 +2211,7 @@ F 3 "~" H 12575 7575 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Tuerschld:IRLML2502PbF Q1
+L Türschild-test1_cleanup-rescue:IRLML2502PbF-Tuerschld Q1
 U 1 1 5EA0F170
 P 8325 7225
 F 0 "Q1" H 8530 7271 50  0000 L CNN
@@ -2323,17 +2312,6 @@ Wire Wire Line
 Wire Wire Line
 	3650 3100 3875 3100
 Connection ~ 3650 3100
-$Comp
-L Device:R R22
-U 1 1 5ED0C6B1
-P 2575 3100
-F 0 "R22" V 2475 3100 50  0000 C CNN
-F 1 "1K" V 2675 3100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2505 3100 50  0001 C CNN
-F 3 "~" H 2575 3100 50  0001 C CNN
-	1    2575 3100
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2175 3100 1450 3100
 Wire Wire Line
@@ -2352,7 +2330,7 @@ Wire Wire Line
 	1450 3450 1450 3525
 Connection ~ 1450 3525
 $Comp
-L Power_Protection:WE-TVS-82400152 U6
+L Türschild-test1_cleanup-rescue:WE-TVS-82400152-Power_Protection U6
 U 1 1 5EF0B64C
 P 1850 4000
 F 0 "U6" H 1825 4275 50  0000 C CNN
@@ -2432,4 +2410,26 @@ Wire Wire Line
 	1400 4800 1325 4800
 Wire Wire Line
 	1325 4800 1325 4700
+$Comp
+L Device:R R22
+U 1 1 5ED0C6B1
+P 2575 3100
+F 0 "R22" V 2475 3100 50  0000 C CNN
+F 1 "1K" V 2675 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2505 3100 50  0001 C CNN
+F 3 "~" H 2575 3100 50  0001 C CNN
+	1    2575 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5E3D7284
+P 7850 4350
+F 0 "#PWR0106" H 7850 4100 50  0001 C CNN
+F 1 "GND" H 7950 4400 50  0000 R CNN
+F 2 "" H 7850 4350 50  0001 C CNN
+F 3 "" H 7850 4350 50  0001 C CNN
+	1    7850 4350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
