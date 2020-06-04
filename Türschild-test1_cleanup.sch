@@ -2432,4 +2432,33 @@ F 3 "" H 7850 4350 50  0001 C CNN
 	1    7850 4350
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C C?
+U 1 1 5EBD1462
+P 6300 3050
+F 0 "C?" H 6300 3200 50  0000 L CNN
+F 1 "100n" H 6300 2950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6338 2900 50  0001 C CNN
+F 3 "~" H 6300 3050 50  0001 C CNN
+	1    6300 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EBD2783
+P 6300 3300
+F 0 "#PWR?" H 6300 3050 50  0001 C CNN
+F 1 "GND" H 6450 3250 50  0000 C CNN
+F 2 "" H 6300 3300 50  0001 C CNN
+F 3 "" H 6300 3300 50  0001 C CNN
+	1    6300 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3300 6300 3200
+Wire Wire Line
+	6300 2900 6300 2700
+Wire Wire Line
+	6300 2700 6125 2700
+Connection ~ 6125 2700
 $EndSCHEMATC
