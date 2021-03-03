@@ -1659,8 +1659,6 @@ Wire Wire Line
 	2550 2750 2550 2700
 Wire Wire Line
 	2250 2750 2550 2750
-Wire Wire Line
-	7850 4350 7925 4350
 Text Notes 1300 1050 0    315  Italic 63
 Spannungsversorgung
 Wire Notes Line
@@ -2132,7 +2130,6 @@ Wire Wire Line
 Connection ~ 1000 4350
 Wire Wire Line
 	1000 4350 1000 5900
-Connection ~ 7925 4350
 $Comp
 L Device:C C26
 U 1 1 5EC27627
@@ -2296,12 +2293,12 @@ $EndComp
 $Comp
 L power:GND #PWR0106
 U 1 1 5E3D7284
-P 7850 4350
-F 0 "#PWR0106" H 7850 4100 50  0001 C CNN
-F 1 "GND" H 7950 4400 50  0000 R CNN
-F 2 "" H 7850 4350 50  0001 C CNN
-F 3 "" H 7850 4350 50  0001 C CNN
-	1    7850 4350
+P 8050 4350
+F 0 "#PWR0106" H 8050 4100 50  0001 C CNN
+F 1 "GND" H 8150 4400 50  0000 R CNN
+F 2 "" H 8050 4350 50  0001 C CNN
+F 3 "" H 8050 4350 50  0001 C CNN
+	1    8050 4350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2478,7 +2475,7 @@ U 1 1 5FA25719
 P 2050 2350
 F 0 "J1" V 2004 2480 50  0000 L CNN
 F 1 "662103130822smt" V 1550 1975 50  0000 L CNN
-F 2 "Tuerschild-Kiacad:662103130822" H 2050 2350 50  0001 L BNN
+F 2 "Connector_Molex:Molex_PicoBlade_53047-0310_1x03_P1.25mm_Vertical" H 2050 2350 50  0001 L BNN
 F 3 "" H 2050 2350 50  0001 C CNN
 	1    2050 2350
 	0    1    1    0   
@@ -2637,4 +2634,18 @@ Wire Notes Line
 	650  6250 8175 6250
 Wire Notes Line
 	8175 600  8175 9875
+Wire Wire Line
+	8050 4350 7975 4350
+Connection ~ 7975 4350
+$Comp
+L Interface_USB:CP2102N-A01-GQFN24 U?
+U 1 1 5FC4C669
+P -350 4900
+F 0 "U?" H -350 5981 50  0000 C CNN
+F 1 "CP2102N-A01-GQFN24" H -350 5890 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 100 4100 50  0001 L CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" H -300 3850 50  0001 C CNN
+	1    -350 4900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
